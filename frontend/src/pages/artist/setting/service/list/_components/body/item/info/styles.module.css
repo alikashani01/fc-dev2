@@ -1,0 +1,22 @@
+.info {
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info > * {
+    width: 100%;
+    color: #aaa;
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    align-items: end;
+}

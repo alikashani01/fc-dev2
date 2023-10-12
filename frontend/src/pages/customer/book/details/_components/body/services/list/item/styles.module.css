@@ -1,0 +1,16 @@
+.item {
+    width: 100%;
+    border-bottom: 1px solid #222;
+    transition: .4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.item:last-child {
+    border-bottom: none;
+}
+
+.title {
+    color: #eee;
+}

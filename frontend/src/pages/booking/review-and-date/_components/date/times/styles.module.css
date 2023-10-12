@@ -1,0 +1,16 @@
+.times {
+    padding: 30px 0;
+}
+.header {
+    width: 100%;
+    height: 40px;
+    background-color: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: .95rem;
+    color: #aaa;
+}
+
+.msg {}

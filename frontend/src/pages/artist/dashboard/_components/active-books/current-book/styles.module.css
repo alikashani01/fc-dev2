@@ -1,0 +1,49 @@
+.current_book {
+    padding: 10px 15px;
+    background-color: #151515;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.top {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: block;
+    animation: circle .5s infinite alternate-reverse;
+}
+@keyframes circle {
+    from {
+        background-color: orange;
+    }
+    to {
+        background-color: rgb(254, 198, 30);
+    }
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.date > span {
+    font-size: .85rem;
+    color: #777;
+}
+.date > div {
+    letter-spacing: 2px;
+}

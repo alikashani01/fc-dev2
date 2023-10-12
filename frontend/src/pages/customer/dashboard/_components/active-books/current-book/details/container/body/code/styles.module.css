@@ -1,0 +1,14 @@
+.part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title {
+    color: #888;
+    font-size: .88rem;
+    padding-top: 2px;
+    word-spacing: 1px;
+}
+.value {
+    letter-spacing: 3px;
+}

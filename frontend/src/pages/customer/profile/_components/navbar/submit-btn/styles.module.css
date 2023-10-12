@@ -1,0 +1,15 @@
+.btn {
+    gap: 5px;
+    background-color: #181818;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+#loading {
+    cursor: default;
+    color: #444;
+}
+#title {
+    font-size: .8rem;
+    word-spacing: 2px;
+    color: #ff6060;
+}

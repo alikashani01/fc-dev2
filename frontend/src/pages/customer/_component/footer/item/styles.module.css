@@ -1,0 +1,49 @@
+.item {
+    width: calc(100% / 5);
+    height: 100%;
+    flex-grow: 1;
+    transition: .4s ease-in-out;
+}
+#hide {
+    opacity: 0;
+    visibility: hidden;
+}
+.item a {
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+.item a > * {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.icon {
+    min-height: 27px;
+    max-height: 27px;
+}
+.item img {
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+}
+.icon {
+    color: #777;
+    position: relative;
+}
+.title {
+    font-size: .6rem;
+    color: #777;
+    margin-top: -7px;
+}
+#isActive {
+    cursor: default;
+    color: #ddd;
+}
+#isActive .title {
+}

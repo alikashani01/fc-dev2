@@ -1,0 +1,18 @@
+.final_review {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    word-spacing: 1px;
+    color: #bbb;
+}

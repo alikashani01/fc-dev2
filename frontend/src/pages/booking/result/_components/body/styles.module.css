@@ -1,0 +1,41 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 40px 5%;
+}
+.body > * {
+    width: 100%;
+    background-color: #111;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+.msg {
+    background-color: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.msg span {
+    font-size: 1.2rem;
+}
+
+.payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment > div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.payment > div > *:first-child {
+    font-size: .85rem;
+    color: #999;
+}

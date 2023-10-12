@@ -1,0 +1,30 @@
+.item {
+
+}
+
+.link {
+    height: 45px;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-bottom: 1px solid #1a1a1a;
+}
+.item:last-child .link {
+    border-bottom: none;
+}
+.link > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.icon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+.title {
+    color: #ddd;
+    font-size: .95rem;
+    word-spacing: 1px;
+}
+

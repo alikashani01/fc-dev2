@@ -1,0 +1,13 @@
+.btn {
+    flex-grow: 1;
+    gap: 10px;
+    /* background-color: #111111; */
+    border: 2px solid #222;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.btn span {
+    color: #fff;
+    font-size: 1.2rem;
+}

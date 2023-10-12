@@ -1,0 +1,14 @@
+.top {
+    width: 100%;
+    height: 40px;
+    background-color: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top > *:first-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

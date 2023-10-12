@@ -1,0 +1,12 @@
+.item {
+    border-bottom: 1px solid #1a1a1a;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.link {
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 5%;
+}

@@ -1,0 +1,11 @@
+.btn {
+    gap: 5px;
+}
+#loading {
+    cursor: default;
+    color: #444;
+}
+.title {
+    font-size: .8rem;
+    word-spacing: 1px;
+}

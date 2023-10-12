@@ -1,0 +1,21 @@
+.part {
+    display: flex;
+    align-items: center;
+}
+.part > * {
+    width: 50%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.title {
+    color: #888;
+    font-size: .9rem;
+}
+
+.price .value {
+    letter-spacing: 2px;
+}

@@ -1,0 +1,41 @@
+.section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111111;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    word-spacing: 2px;
+    font-size: .9rem;
+    color: #cccccc;
+}
+.dayName {
+    font-size: 1.1rem;
+    color: #eee;
+}
+.btn {
+    width: 50px;
+    height: 25px;
+    background-color: #1d1d1d;
+    border-radius: 50px;
+    justify-content: center;
+}
+.circle {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #222222;
+    transform: translateX(50%);
+    transition: .5s;
+}
+#active {
+    background-color: #00d166;
+    transform: translateX(-50%);
+}

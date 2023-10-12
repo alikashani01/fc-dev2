@@ -1,0 +1,17 @@
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    color: #aaaaaa;
+    word-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.mobile {
+    font-size: .85rem;
+    letter-spacing: 1px;
+    color: #999999;
+    letter-spacing: 1px;
+}

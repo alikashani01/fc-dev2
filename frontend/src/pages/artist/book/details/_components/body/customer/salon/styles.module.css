@@ -1,0 +1,21 @@
+.salon {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: #888;
+    font-size: .9rem;
+}
+
+.name {
+
+}
+
+.address {
+    margin-top: 5px;    
+}
+.address > div {
+    display: flex;
+    flex-direction: column;
+}

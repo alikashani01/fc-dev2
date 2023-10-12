@@ -1,0 +1,57 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    word-spacing: 2px;
+    width: 100%;
+}
+.banner > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner > div span {
+    font-size: .8rem;
+    animation: showBooking 1.5s forwards;
+    color: #080808;
+    transform: translateY(20px);
+}
+@keyframes showBooking {
+    to {
+        opacity: 1;
+        color: #999999;
+        transform: translateY(0);
+    }
+}
+
+.banner strong {
+    animation: showBeauty 1.1s 1s forwards ease-out;
+    color: #080808;
+    transform: translateY(20px);
+    font-size: 1rem;
+}
+@keyframes showBeauty {
+    to {
+        opacity: 1;
+        color: #dddddd;
+        transform: translateY(0px);
+    }
+}
+
+.beta {
+    font-size: .6rem;
+    word-spacing: 1px;
+    animation: showBeta .3s 1.8s forwards linear;
+    margin: 0 auto;
+    margin-top: 6px;
+    color: #080808;
+    visibility: hidden;
+}
+@keyframes showBeta {
+    to {
+        visibility: visible;
+        color: #666;
+    }
+}

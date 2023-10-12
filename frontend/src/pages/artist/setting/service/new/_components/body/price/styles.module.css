@@ -1,0 +1,12 @@
+.part > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.unit {
+    position: absolute;
+    left: 15px;
+    color: #888;
+    font-size: .9rem;
+}

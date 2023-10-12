@@ -1,0 +1,20 @@
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    border-bottom: 1px solid #222;
+}
+.top > * {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.title {
+    font-size: .8rem;
+    color: #777;
+}
+.total_duration .value {
+    letter-spacing: 2px;
+}

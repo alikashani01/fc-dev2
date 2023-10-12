@@ -1,0 +1,45 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 5%;
+}
+
+.form > * {
+    width: 100%;
+}
+
+.form select,
+.form input,
+.form textarea {
+    background-color: #111;
+    border: 1px solid #333;
+    color: #eeeeee;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+}
+.form select:focus,
+.form input:focus,
+.form textarea:focus {
+    background-color: #111;
+    border: 1px solid #333;
+    color: #eeeeee;
+    outline: 1px solid #0288e0;
+    box-shadow: none;
+}
+
+.form label {
+    padding-right: 5px;
+    padding-bottom: 2px;
+}
+
+.form input::-webkit-inner-spin-button,
+.form input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.form input[type=number] {
+    -moz-appearance: textfield;
+}

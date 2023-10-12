@@ -1,0 +1,16 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 5%;
+    padding-top: 10px;
+}
+
+.msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    word-spacing: 1px;
+    padding-top: 20px;
+}

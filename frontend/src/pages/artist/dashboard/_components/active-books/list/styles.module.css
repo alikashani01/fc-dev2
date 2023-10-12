@@ -1,0 +1,94 @@
+.books {
+    background-color: #111;
+    border-radius: 12px;
+    padding: 10px 15px;
+    padding-bottom: 0;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top > *:first-child {
+    color: #eeeeee;
+    word-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.numbs {
+    background-color: #222;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    padding-top: 3px;
+}
+.top > *:last-child {
+    color: #aaa;
+    word-spacing: 1px;
+    font-size: .9rem;
+    padding-bottom: 1.5px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 10px;
+}
+.item {
+    width: 100%;
+}
+.link {
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #181818;
+}
+.item:last-child .link {
+    border-bottom: none;
+}
+
+.link > * {
+    display: flex;
+}
+
+.right {
+    flex-direction: column;
+}
+.left {
+    align-items: center;
+    gap: 10px;
+}
+
+.artist {
+    font-size: .95rem;
+    word-spacing: 1px;
+    color: #eee;
+}
+.services {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: .8rem;
+}
+
+.time,
+.day {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #aaaaaa;
+}
+.value {
+    font-size: 1.1rem;
+    padding-top: 3px;
+}
+
+.day {
+    font-size: .8rem;
+}

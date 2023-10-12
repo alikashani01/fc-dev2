@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    padding-right: 5px;
+    padding-bottom: 2px;
+}
+
+.values {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.and {
+    font-size: .85rem;
+    color: #999;
+}
+
+.part {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.unit {
+    font-size: .85rem;
+    color: #999;
+}

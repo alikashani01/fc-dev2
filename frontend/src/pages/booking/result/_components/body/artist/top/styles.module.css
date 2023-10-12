@@ -1,0 +1,17 @@
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    color: #888;
+    font-size: .9rem;
+}
+
+.top > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,27 @@
+.top {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    text-align: right;
+    padding: 0 10px;
+}
+
+.title {
+    color: #888;
+    font-size: .9rem;
+}
+
+.top > div {
+    /* border: 1px solid blue;    */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#phone {
+    width: 40px;
+    position: absolute;
+    background-color: blue;
+    left: 20px;
+}

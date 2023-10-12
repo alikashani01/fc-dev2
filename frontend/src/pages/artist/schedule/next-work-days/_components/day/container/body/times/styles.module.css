@@ -1,0 +1,23 @@
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.top > span {
+    width: 120px;
+    display: flex;
+    font-size: .95rem;
+}
+
+
+.times {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.times > * {
+    width: 100%;
+}

@@ -1,0 +1,53 @@
+.item {
+    width: 100%;
+}
+.link {
+    height: 60px;
+    justify-content: space-between;
+    background-color: #111;
+    border-radius: 10px;
+    padding: 10px;
+}
+.item:last-child .link {
+    border-bottom: none;
+}
+
+.link > * {
+    display: flex;
+}
+
+.right {
+    flex-direction: column;
+}
+.left {
+    align-items: center;
+    gap: 10px;
+}
+
+.artist {
+    font-size: .95rem;
+    word-spacing: 1px;
+    color: #eee;
+}
+.services {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: .8rem;
+}
+
+.time,
+.day {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #aaaaaa;
+}
+.value {
+    font-size: 1.1rem;
+    padding-top: 3px;
+}
+
+.day {
+    font-size: .8rem;
+}

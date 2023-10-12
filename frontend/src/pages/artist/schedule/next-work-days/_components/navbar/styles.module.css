@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.back_title {
+    font-size: .85rem;
+}
+.center {
+    justify-content: center;
+}
+.center > * {
+    font-size: 1.3rem;
+}
+.left {
+    justify-content: end;   
+    letter-spacing: 1px;
+    letter-spacing: 0;
+}

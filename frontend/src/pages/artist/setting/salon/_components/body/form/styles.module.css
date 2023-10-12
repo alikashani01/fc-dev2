@@ -1,0 +1,33 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 5%;
+}
+.form > div {
+    width: 100%;
+}
+.street {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    padding-bottom: 3px;
+    padding-right: 5px;
+    column-rule: #aaa;
+}
+.form input {
+    background-color: #222;
+    border: 1px solid #252525;
+    padding: 12px 15px;
+    color: #eee;
+}
+.form input:focus {
+    background-color: #222;
+    border: 1px solid #252525;
+    outline: 1px solid #0288e0;
+    box-shadow: none;
+    color: #eee;
+}

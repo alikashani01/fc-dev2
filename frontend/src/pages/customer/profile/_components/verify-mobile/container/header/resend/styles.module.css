@@ -1,0 +1,11 @@
+.resend {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.timer {
+    color: #777;   
+    font-size: .8rem;
+    width: 10px;
+}

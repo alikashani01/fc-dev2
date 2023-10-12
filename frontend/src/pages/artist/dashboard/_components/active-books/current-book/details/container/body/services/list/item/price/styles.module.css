@@ -1,0 +1,21 @@
+.price {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.start_from {
+    font-size: .5rem;
+    color: #666;
+}
+
+.value {
+    font-size: .9rem;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.unit {
+    font-size: .5rem;
+    color: #666;
+}

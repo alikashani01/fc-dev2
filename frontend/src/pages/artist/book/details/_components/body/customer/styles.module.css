@@ -1,0 +1,10 @@
+.artist {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.artist > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding-top: 5px;
+}
+
+.container > * {
+    flex-grow: 1;
+}
+
+.container label {
+    color: #aaa;
+    font-size: .95rem;
+}

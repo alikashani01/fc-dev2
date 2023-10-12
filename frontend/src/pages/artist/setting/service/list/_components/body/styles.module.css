@@ -1,0 +1,12 @@
+.body {
+    padding-top: 20px;
+}
+
+.msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-spacing: 2px;
+    color: #aaa;
+    font-size: 1.1rem;
+}

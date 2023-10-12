@@ -1,0 +1,39 @@
+#part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+.status {
+    word-spacing: 1px;
+    color: #ff5555;
+}
+
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.title {
+    font-size: .8rem;
+    color: #888;
+    word-spacing: 1px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.date * {
+    font-size: .8rem;
+    color: #aaa;
+}
+.time {
+    letter-spacing: 2px;
+    font-size: .8rem;
+    color: #aaa;
+}

@@ -1,0 +1,11 @@
+.body {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.body > * {
+    width: 100%;
+    
+}

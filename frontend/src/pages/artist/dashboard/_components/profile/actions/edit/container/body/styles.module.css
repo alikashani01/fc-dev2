@@ -1,0 +1,25 @@
+.body {
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.part {
+    border-bottom: 1px solid #1a1a1a;
+    padding: 8px 0;
+}
+.body button {
+    margin-top: 8px;
+}
+.body label {
+    width: 90px;
+    font-size: .85rem;
+    color: #888;
+}
+.body input {
+    background-color: #fff0;
+    color: #eeeeee;
+}
+.body input::placeholder {}
+.body input:focus {}

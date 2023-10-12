@@ -1,0 +1,48 @@
+.nav {
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #080808;
+    padding: 0 5%;
+}
+.right {
+    font-size: 1.3rem;
+}
+.left {
+    flex-grow: 1;
+}
+.container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: #222222;
+
+}
+.container button {
+    flex-grow: 1;
+    text-transform: uppercase;
+    font-size: .8rem;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    color: #dddddd;
+}
+#selected {
+    display: block;
+    transition: .5s;
+    background-color: #3e3e3e;
+    border-radius: 8px;    
+    padding: 4px 8px;
+}
