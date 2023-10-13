@@ -9,10 +9,8 @@ import connectDB from './config/db.js';
 // Artist-Routes:
 import artistAccountRoutes from './routes/artist/account.js';
 import artistBookRoutes from './routes/artist/dashboard/book.js';
-import artistSalonRoutes from './routes/artist/dashboard/salon.js';
 import artistScheduleRoutes from './routes/artist/dashboard/schedule.js';
 import artistServiceRoutes from './routes/artist/dashboard/service.js';
-import artistSkillRoutes from './routes/artist/dashboard/skill.js';
 // Customer-Routes:
 import customerAccountRoutes from './routes/customer/account.js';
 import customerBookRoutes from './routes/customer/book.js';
@@ -27,8 +25,10 @@ dotenv.config();
 connectDB();
 const app = express();
 
-
-app.use(cors());
+app.use(cors({
+    origin: 'https://fashionceremony.netlify.app',
+}));
+// app.use(cors());
 app.use(express.json());
 
 
@@ -42,10 +42,8 @@ app.use(`${API_ADMIN}/book`, adminBookRoutes);
 const API_ARTIST = '/api/artist';
 app.use(`${API_ARTIST}/account`, artistAccountRoutes);
 app.use(`${API_ARTIST}/dashboard/book`, artistBookRoutes);
-app.use(`${API_ARTIST}/dashboard/salon`, artistSalonRoutes);
 app.use(`${API_ARTIST}/dashboard/schedule`, artistScheduleRoutes);
 app.use(`${API_ARTIST}/dashboard/service`, artistServiceRoutes);
-app.use(`${API_ARTIST}/dashboard/skill`, artistSkillRoutes);
 
 // Customer:
 const API_CUSTOMER = '/api/customer';

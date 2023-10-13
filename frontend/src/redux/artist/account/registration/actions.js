@@ -3,6 +3,7 @@ import { ARTIST_API } from '../../../apis';
 import { 
     ARTIST_ACCOUNT_REGISTRATION_MOBILE_ADD_FAIL, 
     ARTIST_ACCOUNT_REGISTRATION_MOBILE_ADD_REQUEST, 
+    ARTIST_ACCOUNT_REGISTRATION_MOBILE_ADD_RESET, 
     ARTIST_ACCOUNT_REGISTRATION_MOBILE_ADD_SUCCESS, 
     ARTIST_ACCOUNT_REGISTRATION_MOBILE_VERIFY_FAIL, 
     ARTIST_ACCOUNT_REGISTRATION_MOBILE_VERIFY_REQUEST, 
@@ -29,6 +30,14 @@ export const addMobile = (mobile) => async(dispatch) => {
             payload: data,
         });
 
+        localStorage.setItem('artistInfo', JSON.stringify(data));
+       
+        dispatch({
+            type: ARTIST_ACCOUNT_REGISTRATION_MOBILE_ADD_RESET,
+        });
+      
+        document.location.pathname = '/artist';
+
     } catch (error) {
         dispatch({
             type: ARTIST_ACCOUNT_REGISTRATION_MOBILE_ADD_FAIL,
@@ -40,36 +49,36 @@ export const addMobile = (mobile) => async(dispatch) => {
 };
 
 export const verifyMobile = (mobile, verificationCode) => async(dispatch) => {
-    try {
+    // try {
      
-        dispatch({
-            type: ARTIST_ACCOUNT_REGISTRATION_MOBILE_VERIFY_REQUEST,
-        });
+    //     dispatch({
+    //         type: ARTIST_ACCOUNT_REGISTRATION_MOBILE_VERIFY_REQUEST,
+    //     });
      
-        const { data } = await axios.patch(
-            `${API}/verify`,
-            { mobile, verificationCode },
-        );
+    //     const { data } = await axios.patch(
+    //         `${API}/verify`,
+    //         { mobile, verificationCode },
+    //     );
       
-        dispatch({
-            type: ARTIST_ACCOUNT_REGISTRATION_MOBILE_VERIFY_SUCCESS,
-            payload: data,
-        });
+    //     dispatch({
+    //         type: ARTIST_ACCOUNT_REGISTRATION_MOBILE_VERIFY_SUCCESS,
+    //         payload: data,
+    //     });
        
-        localStorage.setItem('artistInfo', JSON.stringify(data));
+    //     localStorage.setItem('artistInfo', JSON.stringify(data));
        
-        dispatch({
-            type: ARTIST_ACCOUNT_REGISTRATION_MOBILE_VERIFY_RESET,
-        });
+    //     dispatch({
+    //         type: ARTIST_ACCOUNT_REGISTRATION_MOBILE_VERIFY_RESET,
+    //     });
       
-        document.location.pathname = '/artist';
+    //     document.location.pathname = '/artist';
         
-    } catch (error) {
-        dispatch({
-            type: ARTIST_ACCOUNT_REGISTRATION_MOBILE_VERIFY_FAIL,
-            payload: error.response && error.response.data.message
-                ? error.response.data.message
-                : error.response,
-        });
-    }
+    // } catch (error) {
+    //     dispatch({
+    //         type: ARTIST_ACCOUNT_REGISTRATION_MOBILE_VERIFY_FAIL,
+    //         payload: error.response && error.response.data.message
+    //             ? error.response.data.message
+    //             : error.response,
+    //     });
+    // }
 };

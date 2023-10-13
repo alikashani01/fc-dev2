@@ -14,7 +14,7 @@ const Activation = () => {
     useEffect(() => {
         if (success) dispatch(getArtistDetails());
     }, [success]);
-    const requirementHandler = !main || !services.length || !salon.name;
+    const requirementHandler = !services.length;
     const activationHandler = () => {
         requirementHandler 
         ? setOpen(true)

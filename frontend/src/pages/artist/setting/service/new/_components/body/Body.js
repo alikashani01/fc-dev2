@@ -1,17 +1,31 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import styles from './styles.module.css';
 import { ServiceContext } from '../../scripts/context';
+import { useNavigate } from 'react-router';
+import { useSelector } from 'react-redux';
 import Duration from './duration/Duration';
 import Price from './price/Price';
 
 
 const Body = () => {
 
+    const navigate = useNavigate();
+
     const { data, changeHandler } = useContext(ServiceContext);
+
+    const { loading, success } = useSelector(state => state.artistDashboardServiceAdd);
     
+    useEffect(() => {
+        success && navigate('/artist/setting/services');
+    }, [success]);
+    
+
     return (
         <form className = {styles.form}>
 
+            {loading 
+            ? <span>Loading...</span>
+            :<>
             <div className = {styles.part}>
                 
                 <label for="validationCustom04" className = "">دسته‌ بندی</label>
@@ -64,6 +78,7 @@ const Body = () => {
             <Price />
 
             <Duration />
+            </>}
 
         </form>
     );

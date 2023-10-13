@@ -31,7 +31,7 @@ const Footer = () => {
                 isActive = {dashboardActive ? true : false}
                 />
 
-                {!booksActive &&
+                {dashboardActive &&
                 <Booking />
                 }
 

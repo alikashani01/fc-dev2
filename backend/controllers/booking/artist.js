@@ -7,20 +7,8 @@ export const getArtistDetails = expressAsyncHandler(async(req, res) => {
     if (!artist) throw new Error('Artist not found');
     res.json(artist);
 });
+
 export const getArtists = expressAsyncHandler(async(req, res) => {
-    const { state, city, skill } = req.query;
-    const query = {
-        'salon.state': state,
-        'salon.city': city,
-        // 'skills.main': skill,
-        // 'skills.sub': [skill],
-    };
-    Artist.find(query, (err, results) => {
-        if (err) {
-            console.error(err);
-            res.status(500).send('Internal Server Error');
-        } else {
-            res.json(results);
-        }
-    });
+    const artists = await Artist.find({});
+    res.json(artists)
 });

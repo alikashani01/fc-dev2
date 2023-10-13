@@ -4,7 +4,6 @@ import { BOOKING_ARTIST, BOOKING_DATE_FREE_FAIL, BOOKING_DATE_FREE_REQUEST, BOOK
 export const bookingReducer = (state = {
     artist: {},
     services: [],
-    skill: '',
     date: {
         time: 0,
         dayName: '',
@@ -12,23 +11,8 @@ export const bookingReducer = (state = {
         month: '',
         date: '',
     },
-    state: '',
-    city: '',
 }, action) => {
     switch (action.type) {
-        case BOOKING_LOCATION:
-            const location = action.payload;
-            return {
-                ...state,
-                state: location.state,
-                city: location.city,
-            };
-        case BOOKING_SKILL:
-            const skill = action.payload;
-            return {
-                ...state,
-                skill: skill,
-            };
         case BOOKING_DAY:
             return {
                 ...state,

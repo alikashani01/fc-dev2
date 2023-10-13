@@ -13,16 +13,14 @@ import {
 } from './constants';
 
 
-export const getArtists = (queryData) => async(dispatch) => {
-
-    const { state = '', city = '', skill = '' } = queryData;
+export const getArtists = () => async(dispatch) => {
 
     try {
         dispatch({
             type: BOOKING_ARTIST_LIST_REQUEST
         });
         const { data } = await axios.get(
-            `${BOOKING_API}/artist/list?state=${state}&city=${city}&skill=${skill}`
+            `${BOOKING_API}/artist/list`
         );
         dispatch({
             type: BOOKING_ARTIST_LIST_SUCCESS,

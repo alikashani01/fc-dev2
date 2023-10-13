@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 import Item from './item/Item';
-import { DashboardIconActive, ServicesIconActive, SkillsIconActive } from './icons';
+import { DashboardIconActive, ServicesIconActive } from './icons';
 
 
 const Menu = () => {
@@ -12,18 +12,6 @@ const Menu = () => {
             title = 'پروفایل آرایشگر'
             path = 'profile'
             icon = {<DashboardIconActive />}
-            />
-            
-            <Item 
-            title = 'سالن'
-            path = 'salon'
-            icon = {<SkillsIconActive />}
-            />
-            
-            <Item 
-            title = 'مهارت‌ها'
-            path = 'skills'
-            icon = {<SkillsIconActive />}
             />
             
             <Item 

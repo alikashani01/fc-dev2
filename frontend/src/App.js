@@ -8,8 +8,6 @@ import ArtistBooks from './pages/artist/book/list/Books';
 import ArtistBook from './pages/artist/book/details/Details';
 import Schedule from './pages/artist/schedule/Schedule';
 import Setting from './pages/artist/setting/main/Setting';
-import Salon from './pages/artist/setting/salon/Salon';
-import Skills from './pages/artist/setting/skills/Skills';
 import Services from './pages/artist/setting/service/list/Services';
 import NewService from './pages/artist/setting/service/new/NewService';
 import EditService from './pages/artist/setting/service/edit/EditService';
@@ -41,8 +39,6 @@ const App = () => {
                         <Route path = 'schedule/day/:dayName' element = {<Day />} />
                         <Route path = 'setting' element = {<Setting />} />
                         <Route path = 'setting/profile' element = {<Profile />} />
-                        <Route path = 'setting/salon' element = {<Salon />} />
-                        <Route path = 'setting/skills' element = {<Skills />} />
                         <Route path = 'setting/services' element = {<Services />} />
                         <Route path = 'setting/services/new' element = {<NewService />} />
                         <Route path = 'setting/services/service/:id' element = {<EditService />} />

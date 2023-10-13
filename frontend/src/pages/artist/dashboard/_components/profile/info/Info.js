@@ -1,15 +1,22 @@
 import React from 'react';
 import styles from './styles.module.css';
-import Details from './details/Details';
-import Photo from './photo/Photo';
+import { useSelector } from 'react-redux';
+
 
 const Info = () => {
+
+    const { artist: { mobile, fullName } } = useSelector(state => state.artistAccountDetails);
+
     return (
-        <div className = {styles.info}>
+        <div className = {styles.details}>
 
-            <Photo />
-
-            <Details />
+            <span className = {styles.name}>
+                {fullName}
+            </span>
+            
+            <span className = {styles.mobile}>
+                {mobile}
+            </span>
 
         </div>
     );

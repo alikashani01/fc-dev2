@@ -28,7 +28,7 @@ const ArtistSchema = new Schema({
     newMobile: { type: String },
     verificationCode: { type: String },
     verificationCodeExpired: { type: Date },
-    isVerified: { type: Boolean, default: false },
+    isVerified: { type: Boolean, default: true },
 
     skills: {
         main: { type: String },

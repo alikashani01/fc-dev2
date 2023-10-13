@@ -10,7 +10,7 @@ const Body = () => {
             
             <Add /> 
             
-            <Verify />
+            {/* <Verify /> */}
             
         </div>
     );

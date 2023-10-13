@@ -17,9 +17,7 @@ const Container = ({ open, setOpen }) => {
             </div>
             
             <div className={styles.body}>
-                {skill && <span className={styles.title}>مهارت اصلی</span>}
                 {service && <span className={styles.title}>حداقل ۱ سرویس</span>}
-                {salonName && <span className={styles.title}>سالن</span>}
             </div>
 
             <Footer setOpen = {setOpen} />

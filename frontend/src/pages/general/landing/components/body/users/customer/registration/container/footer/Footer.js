@@ -12,11 +12,9 @@ const Footer = () => {
     const { setModel: setToggle } = useContext(UsersContext);
     
     const closeHandler = () => {
-
         dispatch({
             type: CUSTOMER_ACCOUNT_REGISTRATION_MOBILE_ADD_RESET,
-        });
-
+        })
         setToggle({ add: false });
     };
 

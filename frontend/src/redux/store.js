@@ -6,21 +6,16 @@ import { artistAccountActivationReducer } from './artist/account/activation/redu
 import { artistAccountDetailsReducer } from './artist/account/details/reducer';
 import { artistAccountMobileEditReducer, artistAccountMobileVerifyReducer } from './artist/account/mobile/reducer';
 import { artistAccountNameEditReducer } from './artist/account/name/reducer';
-import { artistAccountPhotoEditReducer, artistAccountPhotoRemoveReducer } from './artist/account/photo/reducer';
 import { artistAccountRegistrationMobileAddReducer, artistAccountRegistrationMobileVerifyReducer } from './artist/account/registration/reducer';
 import { artistAccountRemoveReducer } from './artist/account/remove/reducer';
 import { artistDashboardBookCurrentDetailsReducer, artistDashboardBookDetailsReducer } from './artist/dashboard/book/details/reducer';
 import { artistDashboardBookListReducer } from './artist/dashboard/book/list/reducer';
 import { artistDashboardBookCancelReducer, artistDashboardBookEndReducer, artistDashboardBookStartReducer } from './artist/dashboard/book/edit/reducer';
-import { artistDashboardSalonEditReducer } from './artist/dashboard/salon/edit/reducer';
-import { artistDashboardSalonRemoveReducer } from './artist/dashboard/salon/remove/reducer';
 import { artistDashboardScheduleDayClosedReducer } from './artist/dashboard/schedule/day/reducer';
 import { artistDashboardScheduleTimeEditReducer } from './artist/dashboard/schedule/time/reducer';
 import { artistDashboardServiceAddReducer } from './artist/dashboard/services/add/reducer';
 import { artistDashboardServiceEditReducer } from './artist/dashboard/services/edit/reducer';
 import { artistDashboardServiceRemoveAllReducer, artistDashboardServiceRemoveReducer } from './artist/dashboard/services/remove/reducer';
-import { artistDashboardSkillMainEditReducer } from './artist/dashboard/skills/main/reducer';
-import { artistDashboardSkillSubEditReducer } from './artist/dashboard/skills/sub/reducer';
 
 import { customerAccountActivationReducer } from './customer/account/activation/reducer';
 import { customerAccountDetailsReducer } from './customer/account/details/reducer';
@@ -44,8 +39,6 @@ const reducers = combineReducers({
     artistAccountMobileEdit: artistAccountMobileEditReducer,
     artistAccountMobileVerify: artistAccountMobileVerifyReducer,
     artistAccountNameEdit: artistAccountNameEditReducer,
-    artistAccountPhotoEdit: artistAccountPhotoEditReducer,
-    artistAccountPhotoRemove: artistAccountPhotoRemoveReducer,
     artistAccountRegistrationMobileAdd: artistAccountRegistrationMobileAddReducer,
     artistAccountRegistrationMobileVerify: artistAccountRegistrationMobileVerifyReducer,
     artistAccountRemove: artistAccountRemoveReducer,
@@ -56,9 +49,6 @@ const reducers = combineReducers({
     artistDashboardBookEnd: artistDashboardBookEndReducer,
     artistDashboardBookCancel: artistDashboardBookCancelReducer,
     artistDashboardBookList: artistDashboardBookListReducer,
-    // Artist >>> Setting >>> Salon:
-    artistDashboardSalonEdit: artistDashboardSalonEditReducer,
-    artistDashboardSalonRemove: artistDashboardSalonRemoveReducer,
     // Artist >>> Setting >>> Schedule:
     artistDashboardScheduleDayClosed: artistDashboardScheduleDayClosedReducer,
     artistDashboardScheduleTimeEdit: artistDashboardScheduleTimeEditReducer,
@@ -67,9 +57,6 @@ const reducers = combineReducers({
     artistDashboardServiceEdit: artistDashboardServiceEditReducer,
     artistDashboardServiceRemove: artistDashboardServiceRemoveReducer,
     artistDashboardServiceRemoveAll: artistDashboardServiceRemoveAllReducer,
-    // Artist >>> Setting >>> Skill:
-    artistDashboardSkillMainEdit: artistDashboardSkillMainEditReducer,
-    artistDashboardSkillSubEdit: artistDashboardSkillSubEditReducer,
 
     // Customer >>> Account:
     customerAccountActivation: customerAccountActivationReducer,

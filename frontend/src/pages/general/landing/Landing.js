@@ -1,8 +1,8 @@
 import React, { createContext, useEffect, useState } from 'react';
 import styles from './styles.module.css';
-import Body from './components/body/Body';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
+import Body from './components/body/Body';
 
 
 export const LandingContext = createContext();

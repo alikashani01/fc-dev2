@@ -2,19 +2,16 @@ import axios from 'axios';
 import { BOOKING_API } from '../apis';
 import { 
     BOOKING_ARTIST, 
-    BOOKING_DATE, 
     BOOKING_DATE_FREE_FAIL, 
     BOOKING_DATE_FREE_REQUEST, 
     BOOKING_DATE_FREE_SUCCESS, 
     BOOKING_DAY, 
-    BOOKING_LOCATION, 
+    BOOKING_TIME,
     BOOKING_SERVICE, 
     BOOKING_SERVICE_REMOVE_ALL, 
-    BOOKING_SKILL, 
     BOOKING_SUBMIT_FAIL, 
     BOOKING_SUBMIT_REQUEST, 
     BOOKING_SUBMIT_SUCCESS, 
-    BOOKING_TIME,
 } from './constants';
 import { 
     BOOKING_ARTIST_DETAILS_FAIL, 
@@ -23,20 +20,7 @@ import {
 } from './artist/constants';
 
 
-export const editLocation = (location) => async(dispatch, getState) => {
-    dispatch({
-        type: BOOKING_LOCATION,
-        payload: location,
-    });
-    localStorage.setItem('bookingInfo', JSON.stringify(getState().booking));
-};
-export const editSkill = (skill) => async(dispatch, getState) => {
-    dispatch({
-        type: BOOKING_SKILL,
-        payload: skill,
-    });
-    localStorage.setItem('bookingInfo', JSON.stringify(getState().booking));
-};
+
 export const getFreeDates = (artist, services) => async(dispatch, getState) => {
     
     try {
